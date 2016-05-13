@@ -4,19 +4,60 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>XYZ SmartHome</title>
-      <link rel="stylesheet" href="css/bootstrap-theme.min.css">
       <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="css/style.css">
 
       <script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
       <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </head>
   <body>
-    <header>
-      <h1>XYZ SmartHome</h1>
-    </header>
-    <div class="container">
+    <header class="container">
       <div class="jumbotron">
-        <h1>Hello</h1>
+        <h1>XYZ SmartHome</h1>
+      </div>
+    </header>
+    <div class="container-fluid">
+      <ul class="nav nav-tabs">
+        <li role="tab" class="active"><a data-toggle="tab" href="#floor-plan">Floor Plan</a></li>
+        <li><a data-toggle="tab" href="#global-options">Global Options</a></li>
+        <li><a data-toggle="tab" href="#account-pref">Account Preferences</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="floor-plan" class="tab-pane fade in active">
+          Floor plan
+        </div>
+        <div id="global-options" class="tab-pane fade">
+          <div class="container-fluid">
+            <div class="global-container">
+
+            </div>
+            <div class="col-md-2 col-md-offset-2">
+              <ul class="nav nav-pills nav-stacked">
+                <li><a data-toggle="tab" href="#Stuff">Stuff</a></li>
+                <li><a data-toggle="tab" href="#Stuff2">Stuff2</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-md-offset-2">
+              <div class="tab-content">
+                <div id="Stuff" class="tab-pane fade">
+                  <div class="container">
+                    Stuff 1
+                  </div>
+                </div>
+                <div id="Stuff2" class="tab-pane fade">
+                  <div class="container">
+                    Stuff 2
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="account-pref" class="tab-page fade">
+          account pref
+        </div>
       </div>
     </div>
     <footer>
