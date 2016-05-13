@@ -1,81 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>XYZ SmartHome</title>
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-      <link rel="stylesheet" href="css/style.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>XYZ SmartHome</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
-      <script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
-      <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <header class="container-fluid">
-      <div class="jumbotron container-fluid">
-        <div class="col-md-8">
-          <h1>XYZ SmartHome</h1>
-        </div>
-        <div id="login" class="col-md-4">
-          Logged in as Kathleen Hobbs
+  <script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <!-- Header of page -->
+  <header class="container-fluid page-header">
+    <div class="jumbotron container-fluid">
+      <div class="col-md-8">
+        <h1><span class="glyphicon glyphicon-home" aria-hidden="true"></span> XYZ SmartHome</h1>
+      </div>
+      <div id="login" class="col-md-4">
+        Logged in as Kathleen Hobbs
+      </div>
+    </div>
+  </header>
+
+  <!-- Main body of web page -->
+  <div class="container-fluid">
+
+    <!-- Tabs section -->
+    <ul class="nav nav-tabs">
+      <li role="tab" class="active">
+        <a data-toggle="tab" href="#floor-plan">
+          <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Floor Plan
+        </a>
+      </li>
+
+      <li>
+        <a data-toggle="tab" href="#global-options">
+          <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Global Options
+        </a>
+      </li>
+
+      <li>
+        <a data-toggle="tab" href="#account-pref">
+          <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Account Preferences
+        </a>
+      </li>
+    </ul>
+
+    <!-- Tab content of pages -->
+    <div class="tab-content">
+
+      <!-- Floor plan tab content -->
+      <div id="floor-plan" class="tab-pane in active">
+        <div class="container">
+          <h1>Floor Plan</h1>
+          <!-- TODO: Make map and insert here -> kitchen popup -> oven popup -->
+          <!-- TODO: Green circle, red square -->
         </div>
       </div>
-    </header>
-    <div class="container-fluid">
-      <ul class="nav nav-tabs">
-        <li role="tab" class="active"><a data-toggle="tab" href="#floor-plan">Floor Plan</a></li>
-        <li><a data-toggle="tab" href="#global-options">Global Options</a></li>
-        <li><a data-toggle="tab" href="#account-pref">Account Preferences</a></li>
-      </ul>
 
-      <div class="tab-content">
+      <!-- Global options tab content -->
+      <div id="global-options" class="tab-pane">
+        <div class="container-fluid">
+          <div class="col-md-4">
 
-        <div id="floor-plan" class="tab-pane in active">
-          <div class="container">
-            <h1>Floor Plan</h1>
+            <!-- Nav pills for global options -->
+            <ul class="nav nav-pills nav-stacked stack-border">
+              <li>
+                <a data-toggle="tab" href="#alarm">
+                  Alarm
+                  <span>[OFF|ON]</span>
+                </a>
+              </li>
+
+              <li>
+                <a data-toggle="tab" href="#blinds">
+                  Blinds
+                  <span>[CLOSED|OPEN]</span>
+                </a>
+              </li>
+
+              <li>
+                <a data-toggle="tab" href="#heating">
+                  Heating <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                </a>
+              </li>
+
+              <li>
+                <a data-toggle="tab" href="#lights">
+                  Lights <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                </a>
+              </li>
+
+              <li>
+                <a data-toggle="tab" href="#locks">
+                  Locks <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                </a>
+              </li>
+
+              <li>
+                <a data-toggle="tab" href="#MSL">
+                  Motion Sensor Log <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                </a>
+              </li>
+
+              <li>
+                <a data-toggle="tab" href="#video">
+                  Video <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                </a>
+              </li>
+            </ul>
           </div>
-        </div>
-
-        <div id="global-options" class="tab-pane">
-          <div class="container-fluid">
-            <div class="global-container">
-              <div class="col-md-2 col-md-offset-2">
-                <ul class="nav nav-pills nav-stacked stack-border">
-                  <li><a data-toggle="tab" href="#Stuff">Stuff</a></li>
-                  <li><a data-toggle="tab" href="#Stuff2">Stuff2</a></li>
-                </ul>
+          <div class="col-md-6 col-md-offset-2">
+            <div class="tab-content">
+              <div id="heating" class="tab-pane fade">
+                <div class="container">
+                  Stuff 1
+                </div>
               </div>
-              <div class="col-md-6 col-md-offset-2">
-                <div class="tab-content">
-                  <div id="Stuff" class="tab-pane fade">
-                    <div class="container">
-                      Stuff 1
-                    </div>
-                  </div>
-                  <div id="Stuff2" class="tab-pane fade">
-                    <div class="container">
-                      Stuff 2
-                    </div>
-                  </div>
+              <div id="lights" class="tab-pane fade">
+                <div class="container">
+                  Stuff 2
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div id="account-pref" class="tab-pane">
-          <div class="container">
-            <h1>Account Pref</h1>
-          </div>
+      <!-- Account preferences tab content -->
+      <div id="account-pref" class="tab-pane">
+        <div class="container">
+          <h1>Account Preferences</h1>
         </div>
+      </div>
 
-      </div>
     </div>
-    <nav class="navbar navbar-default navbar-fixed-bottom">
-      <div class="container">
-        My Footer
-      </div>
-    </nav>
-  </body>
+  </div>
+
+  <!-- Footer -->
+  <nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      My Footer
+    </div>
+  </nav>
+</body>
 </html>

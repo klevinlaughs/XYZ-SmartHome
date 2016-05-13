@@ -8,6 +8,7 @@ body {
   border-width: 1px;
   border-radius: 3px;
   padding: 3px;
+  margin: 10px;
 }
 
 .nav-pill {
@@ -32,8 +33,13 @@ body {
   background-color: #99DB96;
 }
 
-.nav-pills > li > a {
+.nav-pills > li > a  {
   color: black;
+  text-align: left;
+}
+
+.nav-pills > li > a > span {
+  float: right;
 }
 
 .nav-pills > li.active > a,
