@@ -19,6 +19,10 @@ body {
   color: black;
 }
 
+.nav-tabs > li > a:hover {
+  background-color: #99DB96;
+}
+
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:focus,
 .nav-tabs > li.active > a:hover {
@@ -27,7 +31,7 @@ body {
   background-color: #99DB96;
 }
 
-.nav-pill > li.active > a.active {
+.nav-pill > li.active > a:active {
   background-color: #99DB96;
 }
 
