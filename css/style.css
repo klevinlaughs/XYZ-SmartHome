@@ -52,6 +52,7 @@ body {
 
 .jumbotron {
   background-color: #4BAD46;
+  vertical-align: bottom;
 }
 
 .tab-pane {
