@@ -1,5 +1,6 @@
 body {
   /*background: #F5FBF1;*/
+  padding-bottom: 50px;
 }
 
 .stack-border {
@@ -31,8 +32,14 @@ body {
   background-color: #99DB96;
 }
 
-.nav-pill > li.active > a:active {
-  background-color: #99DB96;
+.nav-pills > li > a {
+  color: black;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover{
+  background-color: #034500;
 }
 
 .nav > li {
