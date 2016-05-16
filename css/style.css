@@ -1,72 +1,56 @@
+html {
+  height: 100%;
+}
+
 body {
   /*background: #F5FBF1;*/
   background-repeat: repeat;
+  padding-top: 50px;
   padding-bottom: 50px;
+  height: inherit;
 }
 
-.stack-border {
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 3px;
-  padding: 3px;
-  margin: 10px;
+.max-size {
+  margin: 0;
+  padding: 0;
+  width: inherit;
+  height: inherit;
 }
 
-.nav-pill {
-  border-radius: 1px;
+.side-menu {
+  background-color: grey;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0;
+  margin: 0;
+  height: inherit;
+  overflow-y: visible;
 }
 
-
-.nav-tabs > li > a {
-  background-color: #EEF8EE;
-  color: black;
+.menu > li > a {
+  height: inherit;
 }
 
-.nav-tabs > li > a:hover {
-  background-color: #99DB96;
+.compact-nav {
+  margin: 0;
+  border-radius: 0 0 0 0;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:focus,
-.nav-tabs > li.active > a:hover {
-  font-weight: bold;
-  color: black;
-  background-color: #99DB96;
+.navbar-brand {
+  padding: 0;
 }
 
-.nav-pills > li > a  {
-  color: black;
-  text-align: left;
+.internal {
+  padding-left: 0px;
 }
 
-.nav-pills > li > a > span {
-  float: right;
+#floor-plan {
+  background-color: grey;
+  background: rgb(50, 50, 50, 0.5);
 }
 
-.nav-pills > li.active > a,
-.nav-pills > li.active > a:focus{
-  background-color: #034500;
-}
-
-.nav-pills > li > a:hover{
-  color: white;
-  background-color: #034500;
-}
-
-.nav > li {
-  text-align: center;
-}
-
-.global-tab-padding {
-  padding: 10px;
-}
-
-.jumbotron {
-  background-color: #4BAD46;
-  vertical-align: bottom;
-}
-
-.tab-pane {
-  background-color: #99DB96;
-  border-radius: 0px 0px 5px 5px;
+#global {
+  background-color: red;
+  background: rgb(50, 50, 50, 0.5);
 }

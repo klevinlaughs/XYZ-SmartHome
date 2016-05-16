@@ -9,15 +9,21 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
 
+  <link rel="icon" href="img/ico-xyz.png">
+
   <script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
-</head>
-<body background="bg-arrow.png">
+  <script type="text/javascript" src="js/script.js">
 
-  <nav class="navbar navbar-default">
+  </script>
+</head>
+<body background="img/bg-arrow.png">
+
+  <nav class="navbar navbar-default navbar-fixed-top compact-nav">
     <!-- <nav class="navbar navbar-default navbar-fixed-top"> -->
     <div class="container-fluid">
 
+      <!-- Nav bar -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navMenu" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
@@ -25,7 +31,11 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Brand</a>
+        <a class="navbar-brand" href="#">
+          <img src="img/ico-xyz-nav.png" alt="" class="img-responsive" />
+        </a>
+
+
       </div>
 
       <div class="collapse navbar-collapse" id="navMenu">
@@ -35,149 +45,31 @@
     </div>
   </nav>
 
-  <!-- Header of page -->
-  <header class="container-fluid page-header">
-    <div class="jumbotron container-fluid">
-      <h1><span class="glyphicon glyphicon-home" aria-hidden="true"></span> XYZ SmartHome</h1>
-    </div>
-  </header>
-
   <!-- Main body of web page -->
-  <div class="container-fluid">
-
-    <!-- Tabs section -->
-    <ul class="nav nav-tabs">
-      <li role="tab" class="active">
-        <a data-toggle="tab" href="#floor-plan">
-          <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Floor Plan
-        </a>
-      </li>
-
-      <li>
-        <a data-toggle="tab" href="#global-options">
-          <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Global Options
-        </a>
-      </li>
-
-      <li>
-        <a data-toggle="tab" href="#account-pref">
-          <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Account Preferences
-        </a>
-      </li>
-    </ul>
-
-    <!-- Tab content of pages -->
-    <div class="tab-content">
-
-      <!-- Floor plan tab content -->
-      <div id="floor-plan" class="tab-pane in active">
-        <div class="container">
-          <h1>Floor Plan</h1>
-          <!-- TODO: Make map and insert here -> kitchen popup -> oven popup -->
-          <!-- TODO: Green circle, red square -->
-        </div>
-      </div>
-
-      <!-- Global options tab content -->
-      <div id="global-options" class="tab-pane">
-        <div class="container-fluid">
-
-          <!-- Nav pills for global options -->
-          <div class="col-md-4">
-            <ul class="nav nav-pills nav-stacked stack-border global-tab-padding">
-              <li>
-                <a data-toggle="tab" href="#alarm">
-                  Alarm
-                  <span>[OFF|ON]</span>
-                </a>
-              </li>
-
-              <li>
-                <a data-toggle="tab" href="#blinds">
-                  Blinds
-                  <span>[CLOSED|OPEN]</span>
-                </a>
-              </li>
-
-              <li>
-                <a data-toggle="tab" href="#heating">
-                  Heating <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                </a>
-              </li>
-
-              <li>
-                <a data-toggle="tab" href="#lights">
-                  Lights <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                </a>
-              </li>
-
-              <li>
-                <a data-toggle="tab" href="#locks">
-                  Locks <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                </a>
-              </li>
-
-              <li>
-                <a data-toggle="tab" href="#MSL">
-                  Motion Sensor Log <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                </a>
-              </li>
-
-              <li>
-                <a data-toggle="tab" href="#video">
-                  Video <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Tab content for global -->
-          <div class="col-md-6 col-md-offset-2">
-            <div class="tab-content global-tab-padding">
-              <div id="heating" class="tab-pane fade">
-                <div class="container">
-                  Heating
-                </div>
-              </div>
-              <div id="lights" class="tab-pane fade">
-                <div class="container">
-                  Lights
-                </div>
-              </div>
-              <div id="locks" class="tab-pane fade">
-                <div class="container">
-                  Locks
-                </div>
-              </div>
-              <div id="MSL" class="tab-pane fade">
-                <div class="container">
-                  Motion Sensor Log
-                </div>
-              </div>
-              <div id="video" class="tab-pane fade">
-                <div class="container">
-                  Video
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Account preferences tab content -->
-      <div id="account-pref" class="tab-pane">
-        <div class="container">
-          <h1>Account Preferences</h1>
-        </div>
-      </div>
-
+  <div class="container-fluid max-size">
+    <div class="col-md-1 col-xs-2 side-menu">
+      <ul class="nav nav-pills nav-stacked menu">
+        <li role="presentation" class="active"><a href="#floor-plan" data-toggle="tab">Map</a></li>
+        <li role="presentation"><a href="#global" data-toggle="tab">Global Settings</a></li>
+        <li role="presentation"><a href="#" data-toggle="tab">Account Preferences</a></li>
+      </ul>
     </div>
-  </div>
+
+    <div class="tab-content col-md-11 col-xs-10 container-fluid internal">
+      <div id="floor-plan" class="tab-pane fade in active col-xs-12">
+        asdf
+      </div>
+
+      <div id="global" class="tab-pane col-md-2">
+        asdf
+      </div>
+    </div>
+  </div> <!--.container-fluid-->
 
   <!-- Footer -->
   <nav class="navbar navbar-default navbar-fixed-bottom">
     <div class="container">
-      My Footer
+      <i class="fa fa-bolt" aria-hidden="true"></i>
     </div>
   </nav>
 </body>
