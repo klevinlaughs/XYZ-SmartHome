@@ -42,7 +42,12 @@ body {
 }
 
 .internal {
-  padding-left: 0px;
+  padding-left: 0;
+  height: inherit;
+}
+
+.internal > .tab-pane {
+  height: inherit;
 }
 
 #floor-plan {
