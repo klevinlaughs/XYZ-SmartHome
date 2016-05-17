@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>XYZ SmartHome</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -33,8 +33,8 @@
         </button>
         <a class="navbar-brand" href="#">
           <img src="img/ico-xyz.png" alt="" class="img-responsive nav-icon" />
+          XYZ SmartHome
         </a>
-
 
       </div>
 
@@ -77,8 +77,24 @@
 
   <!-- Footer -->
   <nav class="navbar navbar-default navbar-fixed-bottom">
-    <div class="container">
-      <i class="fa fa-bolt" aria-hidden="true"></i>
+    <div class="container-fluid quickaction">
+      <button id="quickbutton" type="button" class="navbar-toggle collapsed navbar-btn quickbutton" data-toggle="collapse" data-target="#navMenu" aria-expanded="false" onclick="switchArrow();">
+        <span class="sr-only">Toggle navigation</span>
+        <i id="quickicon" class="fa fa-arrow-up" aria-hidden="true"></i>
+      </button>
+
+      <div class="navbar-header">
+        <div class="navbar-brand quickaction-label">
+          <i class="fa fa-bolt" aria-hidden="true"></i>
+          Quick Actions
+        </div>
+      </div>
+
+      <!-- <div class="col-xs-2 quickaction-label">
+        <i class="fa fa-bolt" aria-hidden="true"></i>
+        <text> Quick Actions </text>
+      </div> -->
+
     </div>
   </nav>
 </body>

@@ -40,6 +40,7 @@ body {
 
 .navbar-brand {
   padding: 5px;
+  width: auto;
 }
 
 .nav-icon {
@@ -64,4 +65,33 @@ body {
 #global {
   background-color: red;
   background-color: rgba(50, 50, 50, 0.5);
+}
+
+.navbar-fixed-bottom {
+  height: 50px;
+  border-top-style: none;
+}
+
+.quickaction {
+  height: 48px;
+  vertical-align: middle;
+}
+
+.quickaction-label {
+  margin: 1px 0 1px 0;
+  padding: 2px 5px 2px 5px;
+  top: 0;
+  bottom: 0;
+}
+
+.quickaction-label > i {
+  font-size: 40px;
+}
+
+.quickbutton {
+  padding: 4px;
+}
+
+.quickbutton > i {
+  font-size: 24px;
 }
