@@ -24,6 +24,7 @@ body {
   margin: 0;
   height: inherit;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .menu > li > a {
