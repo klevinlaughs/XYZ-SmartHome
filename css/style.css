@@ -18,8 +18,8 @@ body {
 }
 
 .side-menu {
-  background-color: grey;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: azure;
+  /*background-color: rgba(0, 0, 0, 0.5);*/
   padding: 0;
   margin: 0;
   height: inherit;
@@ -33,14 +33,17 @@ body {
 .compact-nav {
   margin: 0;
   border-radius: 0 0 0 0;
-  padding-left: 10px;
-  padding-right: 10px;
   border-bottom-color: red;
 }
 
 .navbar-brand {
   padding: 5px;
-  width: auto;
+  /*width: 200px;*/
+}
+
+.navbar-brand >img{
+  float: left;
+  /*width: 200px;*/
 }
 
 .nav-icon {
@@ -68,7 +71,7 @@ body {
 }
 
 .navbar-fixed-bottom {
-  height: 50px;
+  /*height: 50px;*/
   border-top-style: none;
 }
 

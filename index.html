@@ -31,10 +31,10 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">
+        <div class="navbar-brand">
           <img src="img/ico-xyz.png" alt="" class="img-responsive nav-icon" />
-          XYZ SmartHome
-        </a>
+          <p>XYZ SmartHome</p>
+        </div>
 
       </div>
 
@@ -48,52 +48,57 @@
   <!-- Main body of web page -->
   <div class="container-fluid max-size">
     <div class="col-md-1 col-xs-2 side-menu">
-      <ul class="nav nav-pills nav-stacked menu">
-        <li role="presentation" class="active"><a href="#floor-plan" data-toggle="tab">Map</a></li>
+      <!-- <ul class="nav nav-pills nav-stacked menu"> -->
+      <ul class="nav nav-pills nav-justified menu">
+        <li role="presentation" class="active"><a href="#dash" data-toggle="tab">Dashboard</a></li>
+        <li role="presentation"><a href="#floor-plan" data-toggle="tab">Map</a></li>
         <li role="presentation"><a href="#global" data-toggle="tab">Global Settings</a></li>
-        <li role="presentation"><a href="#" data-toggle="tab">Account Preferences</a></li>
-        <li role="presentation"><a href="#" data-toggle="tab">Account Preferences</a></li>
-        <li role="presentation"><a href="#" data-toggle="tab">Account Preferences</a></li>
-        <li role="presentation"><a href="#" data-toggle="tab">Account Preferences</a></li>
-        <li role="presentation"><a href="#" data-toggle="tab">Account Preferences</a></li>
-        <li role="presentation"><a href="#" data-toggle="tab">Account Preferences</a></li>
-        <li role="presentation"><a href="#" data-toggle="tab">Account Preferences</a></li>
-        <li role="presentation"><a href="#" data-toggle="tab">Account Preferences</a></li>
-        <li role="presentation"><a href="#" data-toggle="tab">Account Preferences</a></li>
-        <li role="presentation"><a href="#" data-toggle="tab">Account Preferences</a></li>
+        <li role="presentation"><a href="#account" data-toggle="tab">Account Preferences</a></li>
       </ul>
     </div>
 
     <div class="tab-content col-md-11 col-xs-10 container-fluid internal">
-      <div id="floor-plan" class="tab-pane fade in active col-xs-12">
-        asdf
+      <div id="dash" class="tab-pane fade in active col-xs-12">
+        dash
+      </div>
+
+      <div id="floor-plan" class="tab-pane fade col-xs-12">
+        map
       </div>
 
       <div id="global" class="tab-pane col-md-2">
-        asdf
+        global
+      </div>
+
+      <div id="account" class="tab-pane col-md-2">
+        account
       </div>
     </div>
   </div> <!--.container-fluid-->
 
   <!-- Footer -->
   <nav class="navbar navbar-default navbar-fixed-bottom">
-    <div class="container-fluid quickaction">
-      <button id="quickbutton" type="button" class="navbar-toggle collapsed navbar-btn quickbutton" data-toggle="collapse" data-target="#navMenu" aria-expanded="false" onclick="switchArrow();">
-        <span class="sr-only">Toggle navigation</span>
-        <i id="quickicon" class="fa fa-arrow-up" aria-hidden="true"></i>
-      </button>
-
+    <div class="container-fluid ">
       <div class="navbar-header">
+        <button id="quickbutton" type="button" class="navbar-toggle collapsed navbar-btn quickbutton" data-toggle="collapse" data-target="#quickbar" aria-expanded="false" onclick="switchArrow();">
+          <span class="sr-only">Toggle navigation</span>
+          <i id="quickicon" class="fa fa-arrow-up" aria-hidden="true"></i>
+        </button>
+
         <div class="navbar-brand quickaction-label">
           <i class="fa fa-bolt" aria-hidden="true"></i>
           Quick Actions
         </div>
       </div>
 
-      <!-- <div class="col-xs-2 quickaction-label">
-        <i class="fa fa-bolt" aria-hidden="true"></i>
-        <text> Quick Actions </text>
-      </div> -->
+      <div class="collapse navbar-collapse" id="quickbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#"><i class="fa fa-sun-o"></i> Waking Up</a></li>
+          <li><a href="#"><i class="fa fa-moon-o"></i> Bed Time</a></li>
+          <li><a href="#">Coming Home</a></li>
+          <li><a href="#">Leaving Home</a></li>
+        </ul>
+      </div>
 
     </div>
   </nav>
