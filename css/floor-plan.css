@@ -1,0 +1,62 @@
+.cls-1,
+.cls-5 {
+  fill: #fff;
+}
+
+.cls-2,
+.cls-3,
+.cls-4,
+.cls-6 {
+  fill: none;
+}
+
+.cls-2,
+.cls-3,
+.cls-4,
+.cls-5,
+.cls-6 {
+  stroke: #000;
+}
+
+.cls-2,
+.cls-3,
+.cls-5,
+.cls-6 {
+  stroke-miterlimit: 10;
+}
+
+.cls-2,
+.cls-4 {
+  stroke-width: 2px;
+}
+
+.cls-3 {
+  stroke-width: 5px;
+}
+
+.cls-4 {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.cls-7 {
+  font-size: 12px;
+}
+
+.cls-7,
+.cls-8,
+.cls-9 {
+  font-family: Myriad Pro;
+}
+
+.cls-8 {
+  font-size: 7px;
+}
+
+.cls-9 {
+  font-size: 11px;
+}
+
+.cls-1:hover {
+  fill: red;
+}

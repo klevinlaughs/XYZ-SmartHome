@@ -97,14 +97,25 @@ body {
   height: inherit;
 }
 
-#floor-plan {
+/*#floor-plan {
   background-color: grey;
   background-color: rgba(50, 50, 50, 0.5);
+}*/
+
+.floors-pane {
+  background-color: grey;
+  background-color: rgba(50, 50, 50, 0.5);
+  height: inherit;
 }
 
 #global {
   background-color: red;
   background-color: rgba(50, 50, 50, 0.5);
+}
+
+#account {
+    background-color: red;
+    background-color: rgba(50, 50, 50, 0.5);
 }
 
 .navbar-fixed-bottom {
