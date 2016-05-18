@@ -37,11 +37,17 @@
             XYZ SmartHome
           </p>
         </a>
-
       </div>
 
       <div class="collapse navbar-collapse" id="navMenu">
-        <p class="navbar-text navbar-right">Logged in as <a href="#" class="navbar-link">Kathleen Hobbs</a></p>
+        <p class="navbar-text navbar-right login-label">Logged in as <a href="#" class="navbar-link">Kathleen Hobbs</a></p>
+
+        <!-- <form class="navbar-form navbar-right" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+        </form> -->
       </div>
 
     </div>
@@ -51,10 +57,10 @@
   <div class="container-fluid max-size">
     <div class="col-md-1 col-xs-2 side-menu">
       <ul class="nav nav-pills nav-stacked menu">
-        <li role="presentation" class="active"><a href="#dash" data-toggle="tab">Dashboard</a></li>
-        <li role="presentation"><a href="#floor-plan" data-toggle="tab">Map</a></li>
-        <li role="presentation"><a href="#global" data-toggle="tab">Global Settings</a></li>
-        <li role="presentation"><a href="#account" data-toggle="tab">Account Preferences</a></li>
+        <li role="presentation" class="active"><a href="#dash" data-toggle="tab" class="container-fluid"><i class="fa fa-th-large col-xs-12"></i>Dashboard</a></li>
+        <li role="presentation"><a href="#floor-plan" data-toggle="tab" class="container-fluid"><i class="fa fa-map col-xs-12"></i>Floor Plan</a></li>
+        <li role="presentation"><a href="#global" data-toggle="tab" class="container-fluid"><i class="fa fa-cogs col-xs-12"></i>Global Options</a></li>
+        <li role="presentation"><a href="#account" data-toggle="tab" class="container-fluid"><i class="fa fa-user col-xs-12"></i>Account</a></li>
       </ul>
     </div>
 
@@ -67,11 +73,11 @@
         map
       </div>
 
-      <div id="global" class="tab-pane col-md-2">
+      <div id="global" class="tab-pane fade col-md-2">
         global
       </div>
 
-      <div id="account" class="tab-pane col-md-2">
+      <div id="account" class="tab-pane fade col-md-2">
         account
       </div>
     </div>

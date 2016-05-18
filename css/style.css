@@ -23,12 +23,34 @@ body {
   padding: 0;
   margin: 0;
   height: inherit;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
+}
+
+.menu > li + li {
+  border-top-style: solid;
+  border-top-color: grey;
+  border-top-width: 1px;
+  margin-top: 0;
 }
 
 .menu > li > a {
   height: inherit;
+  text-align: center;
+  margin: auto;
+}
+
+.menu > li > a > i {
+  font-size: 50px;
+  padding: 0;
+}
+
+.menu-separator {
+  height: 1px;
+  width: inherit;
+  padding: 0;
+  margin: 0;
+  background-color: black;
 }
 
 .compact-nav {
@@ -54,6 +76,10 @@ body {
     font-size: 20px;
     overflow: hidden;
   }
+}
+
+.login-label {
+  margin-right: 0;
 }
 
 .nav-icon {
