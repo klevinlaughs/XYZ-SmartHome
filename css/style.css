@@ -29,9 +29,10 @@ body {
 
 .menu > li + li {
   border-top-style: solid;
-  border-top-color: grey;
+  border-top-color: red;
   border-top-width: 1px;
-  margin-top: 0;
+  margin-top: 5px;
+  padding-top: 5px;
 }
 
 .menu > li > a {
