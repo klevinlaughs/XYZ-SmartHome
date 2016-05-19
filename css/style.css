@@ -148,7 +148,7 @@ body {
 }
 
 .interactive-floor {
-  max-height: 100%;
+  width: 75%;
 }
 
 .interactive-room:hover,
