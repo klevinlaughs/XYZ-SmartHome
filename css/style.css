@@ -160,7 +160,7 @@ body {
   text-decoration: none;
 }
 
-.interactive-text:hover {
+.interactive-text{
   pointer-events: none;
 }
 
