@@ -1,3 +1,7 @@
+svg text {
+  pointer-events: none;
+}
+
 .block {
   fill: #fff;
 }
@@ -55,8 +59,4 @@
 .interactive-link:hover,
 .interactive-link:focus {
   text-decoration: none;
-}
-
-.interactive-text{
-  pointer-events: none;
 }
