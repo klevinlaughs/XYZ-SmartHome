@@ -42,7 +42,7 @@
       </div>
 
       <div class="collapse navbar-collapse" id="navMenu">
-        <button type="button" name="button" class="navbar-btn navbar-right nav-logout-btn btn-default btn">Log Out</button>
+        <button type="button" class="navbar-btn navbar-right nav-logout-btn btn-default btn">Log Out</button>
         <p class="navbar-text navbar-right">Welcome Kathleen Hobbs</p>
 
         <!-- <form class="navbar-form navbar-right" role="search">
@@ -98,14 +98,13 @@
         <div class="col-xs-10 floors-pane">
           <div class="tab-content max-size">
             <div id="floor-0" class="tab-pane fade container-fluid max-size floor-div">
-              <!-- <embed id="floor-svg" src="floorplan-text.svg" type="image/svg+xml"> -->
               <svg id="floor-svg" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 309.33 343.83" class="interactive-floor">
                 <polygon class="cls-1" points="149 208.3 107.83 208.33 107.83 196 1 196 1 341.76 149 341.76 149 208.3" />
                 <polygon class="cls-1" points="308.33 95 308.33 196 288.33 196 288.33 208.33 221.66 208.33 221.66 196 182 196 182 95 308.33 95" />
                 <rect class="cls-1" x="241.33" y="1" width="67" height="94" />
                 <a href="#kitchen" data-toggle="tab" class="interactive-room">
                   <rect class="cls-1" x="141.67" y="1" width="99.67" height="94"/>
-                  <text class="cls-7" transform="translate(172.48 51.52)">
+                  <text class="cls-7 interactive-text" transform="translate(172.48 51.52)">
                     Kitchen
                   </text>
                 </a>
@@ -173,10 +172,7 @@
                   <tspan x="8.48" y="14.4">oom</tspan>
                 </text>
                 <text class="cls-7" transform="translate(26.78 141.82)">Guest
-                  <tspan x="-8.61" y="14.4">B</tspan>
-                  <tspan x="-2.06" y="14.4">ed</tspan>
-                  <tspan x="10.72" y="14.4">r</tspan>
-                  <tspan x="14.53" y="14.4">oom</tspan>
+                  <tspan x="-8.61" y="14.4">Bedroom</tspan>
                 </text>
                 <text class="cls-7" transform="translate(57 272.62)">
                   Garage
@@ -200,7 +196,17 @@
             </div>
 
             <div id="kitchen" class="tab-pane fade">
+              <div class="container-fluid">
+                <div class="col-md-3">
+                  <h1><a href="#floor-0" data-toggle="tab">Return to Ground Floor Map</a></h1>
+                </div>
+                <div class="col-md-9">
+                  <h1>Kitchen</h1>
+                </div>
+              </div>
+              <div class="container-fluid">
 
+              </div>
             </div>
 
             <div id="floor-1" class="tab-pane fade">

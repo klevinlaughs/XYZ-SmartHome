@@ -160,6 +160,10 @@ body {
   text-decoration: none;
 }
 
+.interactive-text:hover {
+  pointer-events: none;
+}
+
 .floor-div {
   text-align:center;
   height: inherit;
