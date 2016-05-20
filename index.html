@@ -102,7 +102,7 @@
                 <polygon class="interactive-block" points="149 208.3 107.83 208.33 107.83 196 1 196 1 341.76 149 341.76 149 208.3" />
                 <polygon class="interactive-block" points="308.33 95 308.33 196 288.33 196 288.33 208.33 221.66 208.33 221.66 196 182 196 182 95 308.33 95" />
                 <rect class="interactive-block" x="241.33" y="1" width="67" height="94" />
-                <a href="#kitchen" data-toggle="tab" class="interactive-room">
+                <a href="#kitchen" data-toggle="tab" class="interactive-link">
                   <rect class="interactive-block" x="141.67" y="1" width="99.67" height="94" />
                   <text class="text-big interactive-text" transform="translate(172.48 51.52)">
                     Kitchen
@@ -192,22 +192,26 @@
               </svg>
             </div>
 
-            <div id="kitchen" class="tab-pane fade">
-              <div class="container">
+            <div id="kitchen" class="tab-pane fade max-size floor-div">
+              <div class="container-fluid">
                 <a href="#floor-0" data-toggle="tab">Return to Ground Floor Map</a>
               </div>
               <div class="container-fluid">
                 <h1>Kitchen</h1>
               </div>
               <div class="container-fluid">
-                <svg id="kitchen-svg" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 234.45 220.5">
+                <svg id="kitchen-svg" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 234.45 220.5" class="interactive-floor">
+                  <rect class="block" x="1" y="1" width="234" height="220" />
                   <rect class="interactive-block" x="51.05" y="1" width="52.67" height="40.5" />
                   <rect class="interactive-block" x="1.38" y="1" width="49.67" height="40.5" />
                   <rect class="interactive-block" x="142.71" y="181.5" width="45.67" height="38" />
                   <rect class="interactive-block" x="96.38" y="181.5" width="46.33" height="38" />
                   <rect class="interactive-block" x="195.44" y="41.5" width="38" height="31" />
                   <rect class="interactive-block" x="62.36" y="181.5" width="34.02" height="38" />
-                  <rect class="interactive-block" x="195.44" y="72.5" width="38" height="30" />
+                  <a href="#" data-toggle="modal" data-target="#ovenModal" class="interactive-link">
+                    <rect class="interactive-block" x="195.44" y="72.5" width="38" height="30" />
+                    <text class="text-small interactive-text" transform="translate(204.9 89.69)">Oven</text>
+                  </a>
                   <path class="outline" d="M175.64,316" transform="translate(-113.29 -96.5)" />
                   <polyline class="outline" points="233.45 134.37 233.45 1 1 1 1 65.7" />
                   <polyline class="outline" points="233.45 178.24 233.45 219.5 62.36 219.5" />
@@ -233,8 +237,31 @@
                   <line class="outline" x1="142.71" y1="219.5" x2="142.71" y2="181.5" />
                   <line class="outline" x1="188.38" y1="219.5" x2="188.38" y2="181.5" />
                   <line class="outline" x1="195.44" y1="102.5" x2="233.45" y2="102.5" />
+                  <text class="text-small" transform="translate(13.94 23.3)">Fridge</text>
+                  <text class="text-small" transform="translate(57 23.3)">Dishwasher</text>
+                  <text class="text-small" transform="translate(148.39 198.55)">Sandwich<tspan x="6.8" y="8.4">Press</tspan></text>
+                  <text class="text-small" transform="translate(107.74 198.55)">Coffee<tspan x="-3.13" y="8.4">Machine</tspan></text>
+                  <text class="text-small" transform="translate(204.03 58.85)">Stove</text>
+                  <text class="text-small" transform="translate(68.12 202.35)">Kettle</text>
                 </svg>
+              </div>
 
+              <div class="modal fade" id="ovenModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog modal-sm" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="glyphicon glyphicon-remove"></span></button>
+                      <h4 class="modal-title" id="myModalLabel">Oven Settings</h4>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 

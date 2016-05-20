@@ -1,3 +1,7 @@
+.block {
+  fill: #fff;
+}
+
 .interactive-block {
   fill: #fff;
 }
@@ -42,4 +46,17 @@
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-dasharray: 6;
+}
+
+.interactive-floor {
+  width: 75%;
+}
+
+.interactive-link:hover,
+.interactive-link:focus {
+  text-decoration: none;
+}
+
+.interactive-text{
+  pointer-events: none;
 }
