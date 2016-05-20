@@ -1,37 +1,73 @@
-.cls-1, .cls-5 {
-    fill: #fff;
+.interactive-block {
+  fill: #fff;
 }
-.cls-2, .cls-3, .cls-4, .cls-6 {
-    fill: none;
+
+.interactive-block:hover {
+  fill: red;
 }
-.cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
-    stroke: #000;
+
+.cls-2 {
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
 }
-.cls-2, .cls-3, .cls-5, .cls-6 {
-    stroke-miterlimit: 10;
-}
-.cls-2, .cls-4 {
-    stroke-width: 2px;
-}
+
 .cls-3 {
-    stroke-width: 5px;
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  stroke-width: 5px;
 }
+
 .cls-4 {
-    stroke-linecap: round;
-    stroke-linejoin: round;
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
+
+.cls-5 {
+  fill: #fff;
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+
+.cls-6 {
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+
 .cls-7 {
-    font-size: 12px;
+  font-size: 12px;
+  font-family: Verdana;
 }
-.cls-7, .cls-8, .cls-9 {
-    font-family: Verdana;
-}
+
 .cls-8 {
-    font-size: 7px;
+  font-size: 7px;
+  font-family: Verdana;
 }
+
 .cls-9 {
-    font-size: 11px;
+  font-size: 11px;
+  font-family: Verdana;
 }
-.cls-1:hover {
-    fill: red;
+
+.cls-10 {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.cls-11{
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 6;
 }
