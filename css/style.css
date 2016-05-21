@@ -47,24 +47,31 @@ body {
   overflow-x: hidden;
 }
 
+.nav-stacked > li {
+  margin-bottom: -2px;
+}
+
+.nav-stacked > li.active > a,
+.nav-stacked > li.active > a:focus,
+.nav-stacked > li.active > a:hover,
+.nav-stacked > li > a.active,
+.nav-stacked > li > a:hover {
+  border-radius: 0;
+}
+
 .menu > li.active > a,
 .menu > li.active > a:focus,
 .menu > li.active > a:hover,
 .menu > li > a.active,
 .menu > li > a:hover {
   background-color: var(--dark1);
-  border-radius: 0;
   color: var(--dark5);
 }
 
 .menu > li + li {
   border-top-style: solid;
-  border-top-color: var(--dark1);
+  border-top-color: var(--norm1);
   border-top-width: 1px;
-}
-
-.menu > li {
-  margin-bottom: -2px;
 }
 
 .menu > li > a {
@@ -90,19 +97,26 @@ body {
 .top-nav {
   margin: 0;
   border-radius: 0 0 0 0;
+  border-style: none;
 }
 
 .style-nav {
   background-color: var(--dark5);
 }
 
-.navbar-default .navbar-text {
+.navbar-default .navbar-text,
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover {
+  color: white;
+}
+
+.navbar-default .quickset > li > a,
+.navbar-default .quickset > li > a:hover {
   color: white;
 }
 
 .navbar-brand {
   padding: 5px;
-  /*width: 200px;*/
 }
 
 @media (min-width: 0px){
@@ -144,7 +158,12 @@ body {
 
 .floors-pane {
   background-color: var(--norm3);
-  height: inherit;
+}
+
+@media (max-width: 768px){
+  .floors-pane {
+    height: auto;
+  }
 }
 
 .floor-pill > li > a {
@@ -153,6 +172,7 @@ body {
 
 .floor-pill > li.active > a,
 .floor-pill > li.active > a:focus,
+.floor-pill > li.active > a:hover,
 .floor-pill > li > a:hover {
   background-color: var(--norm2);
 }
