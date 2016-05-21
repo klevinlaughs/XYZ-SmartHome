@@ -112,11 +112,13 @@
       </div>
 
       <div id="floor-plan" class="tab-pane fade col-xs-12 container-fluid max-size">
-        <div class="col-sm-12 max-size">
-          <ul class="nav nav-pills nav-justified floor-pill floors-pane">
+        <div class="col-sm-2 floors-pane max-size">
+          <ul class="nav nav-pills nav-stacked floor-pill floors-pane">
             <li><a href="#floor-0" data-toggle="tab">Ground Floor</a></li>
             <li><a href="#floor-1" data-toggle="tab">Floor 1</a></li>
           </ul>
+        </div>
+        <div class="col-sm-10 max-size">
           <div class="tab-content max-size">
             <div id="floor-0" class="tab-pane fade container-fluid max-size floor-div floor-display">
               <div class="container-fluid">
@@ -283,6 +285,10 @@
                   </div>
                   <div id="oven-body" class="modal-body collapse">
                     <div class="row">
+                      <div class="input-group">
+                        <span class="input-group-addon" id="temp">Temperature</span>
+                        <input type="number" class="form-control" placeholder="Username" aria-describedby="temp" min="60" max="300">
+                      </div>
                       temperature, time, mode, confirm, cancel
                     </div>
                   </div>
