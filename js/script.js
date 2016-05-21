@@ -5,6 +5,25 @@ document.addEventListener("DOMContentLoaded", function(evt){
   var quickbutton = $("#quickbutton");
   quickbutton.width(quickbutton.height());
 
+
+  $("#oven-toggle").click(function(){
+    var btn = $(this);
+
+    // btn.attr("data-target", "#oven-" + btn.text().toLowerCase() + "-tab");
+    btn.text(btn.text() === "OFF" ? "ON" : "OFF");
+
+    $("#oven-off-tab, #oven-on-tab").toggleClass("in active");
+
+    // if (btn.text() === "OFF"){
+    //   btn.text("ON");
+    //   btn.attr("target", "#oven-off-tab");
+    // } else {
+    //   btn.text("OFF");
+    //   btn.attr("target", "#oven-on-tab");
+    // }
+
+  });
+
 });
 
 function switchArrow() {

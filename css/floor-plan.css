@@ -81,6 +81,13 @@ svg text {
   stroke-dasharray: 6;
 }
 
-.interactive-floor {
-  width: 40%;
+@media (min-width: 768px) {
+  .interactive-floor {
+    width: 40%;
+  }
+}
+@media (min-width: 992px) {
+  .interactive-floor {
+    width: 50%;
+  }
 }

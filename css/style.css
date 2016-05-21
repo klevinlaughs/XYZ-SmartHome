@@ -170,6 +170,10 @@ body {
   color: white;
 }
 
+.floor-title {
+  background-color: red;
+}
+
 .floor-pill > li.active > a,
 .floor-pill > li.active > a:focus,
 .floor-pill > li.active > a:hover,

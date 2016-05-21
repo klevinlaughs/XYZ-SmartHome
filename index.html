@@ -121,7 +121,7 @@
         <div class="col-sm-10 max-size">
           <div class="tab-content max-size">
             <div id="floor-0" class="tab-pane fade container-fluid max-size floor-div">
-              <div class="container-fluid">
+              <div class="container-fluid floor-title">
                 <h1>Ground Floor</h1>
               </div>
               <div class="container-fluid">
@@ -221,10 +221,8 @@
             </div>
 
             <div id="kitchen" class="tab-pane fade max-size floor-div">
-              <div class="container-fluid">
+              <div class="container-fluid floor-title">
                 <a href="#floor-0" data-toggle="tab">Return to Ground Floor Plan</a>
-              </div>
-              <div class="container-fluid">
                 <h1>Kitchen</h1>
               </div>
               <div class="container-fluid">
@@ -280,16 +278,27 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="glyphicon glyphicon-remove"></span></button>
-                    <button type="button" class="btn btn-default" data-target="#oven-body" data-toggle="collapse">OFF</button>
+                    <button id="oven-toggle" type="button" class="btn btn-default">OFF</button>
                     <h4 class="modal-title" id="myModalLabel">Oven Settings</h4>
                   </div>
-                  <div id="oven-body" class="modal-body collapse">
-                    <div class="row">
-                      <div class="input-group">
-                        <span class="input-group-addon" id="temp">Temperature</span>
-                        <input type="number" class="form-control" placeholder="Username" aria-describedby="temp" min="60" max="300">
+                  <div id="oven-tabs" class="modal-body tab-content">
+                    <div id="oven-off-tab" class="tab-pane fade in active">
+                      please turn on
+                    </div>
+                    <div id="oven-on-tab" class="tab-pane fade">
+                      <div class="row">
+                        <div class="input-group col-xs-10 col-xs-offset-1">
+                          <input type="number" class="form-control" placeholder="Temperature" aria-describedby="temp" min="60" max="300">
+                          <span class="input-group-addon">
+                            <input type="radio" name="unit">
+                            C
+                            <input type="radio" name="unit">
+                            F
+                          </span>
+                        </div>
+                        time, mode, confirm, cancel
+                        conventional, fan-bake, top only, fan-bake and top-only, defrost
                       </div>
-                      temperature, time, mode, confirm, cancel
                     </div>
                   </div>
                   <div class="modal-footer">
