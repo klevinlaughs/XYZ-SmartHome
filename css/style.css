@@ -51,11 +51,11 @@ body {
   margin-bottom: -2px;
 }
 
-.nav-stacked > li.active > a,
-.nav-stacked > li.active > a:focus,
-.nav-stacked > li.active > a:hover,
-.nav-stacked > li > a.active,
-.nav-stacked > li > a:hover {
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover,
+.nav-pills > li > a.active,
+.nav-pills > li > a:hover {
   border-radius: 0;
 }
 

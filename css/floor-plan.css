@@ -1,3 +1,23 @@
+:root {
+  --light1: #AFCBB1;
+  --light2: #7BA97E;
+  --light3: #538D57;
+  --light4: #357039;
+  --light5: #195D1D;
+
+  --norm1: #95ACA5;
+  --norm2: #688E82;
+  --norm3: #457667;
+  --norm4: #2D5E4F;
+  --norm5: #154E3D;
+
+  --dark1: #909EA5;
+  --dark2: #657C88;
+  --dark3: #456371;
+  --dark4: #2D4B5A;
+  --dark5: #173B4A;
+}
+
 svg text {
   pointer-events: none;
 }
@@ -11,7 +31,12 @@ svg text {
 }
 
 .interactive-block:hover {
-  fill: red;
+  fill: var(--norm1);
+}
+
+.interactive-link:hover,
+.interactive-link:focus {
+  text-decoration: none;
 }
 
 .outline {
@@ -54,9 +79,4 @@ svg text {
 
 .interactive-floor {
   width: 50%;
-}
-
-.interactive-link:hover,
-.interactive-link:focus {
-  text-decoration: none;
 }
