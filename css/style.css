@@ -160,10 +160,6 @@ body {
   background-color: var(--norm3);
 }
 
-/*.floor-display {
-  background-color: var(--norm2);
-}*/
-
 @media (max-width: 768px){
   .floors-pane {
     height: auto;
@@ -182,7 +178,6 @@ body {
 }
 
 .navbar-fixed-bottom {
-  /*height: 50px;*/
   border-top-style: none;
 }
 
@@ -193,13 +188,22 @@ body {
 
 .quickaction-label {
   margin: 1px 0 1px 0;
-  padding: 2px 5px 2px 5px;
+  padding: 0 5px 0 5px;
   top: 0;
   bottom: 0;
 }
 
 .quickaction-label > i {
   font-size: 40px;
+  float: left;
+}
+
+@media (min-width: 0px){
+  .quickaction-label > p {
+    margin: 15px 15px 15px 15px;
+    font-size: 20px;
+    overflow: hidden;
+  }
 }
 
 .quickbutton {
