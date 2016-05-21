@@ -170,10 +170,6 @@ body {
   color: white;
 }
 
-.floor-title {
-  background-color: red;
-}
-
 .floor-pill > li.active > a,
 .floor-pill > li.active > a:focus,
 .floor-pill > li.active > a:hover,
@@ -181,6 +177,15 @@ body {
   background-color: var(--norm2);
 }
 
+
+.floor-title {
+  background-color: var(--light1);
+}
+
+.floor-div {
+  text-align:center;
+  height: inherit;
+}
 .navbar-fixed-bottom {
   border-top-style: none;
 }
@@ -222,7 +227,6 @@ body {
   background-color: #E9F5B5;
 }
 
-.floor-div {
-  text-align:center;
-  height: inherit;
+.quickicon {
+  color: white;
 }

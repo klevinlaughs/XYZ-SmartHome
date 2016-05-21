@@ -86,8 +86,8 @@ svg text {
     width: 40%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1600px) {
   .interactive-floor {
-    width: 50%;
+    width: 47%;
   }
 }
