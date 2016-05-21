@@ -143,9 +143,9 @@ body {
   float: left;
 }
 
-.dashboard {
+/*.dashboard {
   background-color: var(--light1);
-}
+}*/
 
 .internal {
   padding-left: 0;
@@ -159,6 +159,10 @@ body {
 .floors-pane {
   background-color: var(--norm3);
 }
+
+/*.floor-display {
+  background-color: var(--norm2);
+}*/
 
 @media (max-width: 768px){
   .floors-pane {
