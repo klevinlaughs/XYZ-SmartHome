@@ -1,5 +1,26 @@
+:root {
+  --light1: #AFCBB1;
+  --light2: #7BA97E;
+  --light3: #538D57;
+  --light4: #357039;
+  --light5: #195D1D;
+
+  --norm1: #95ACA5;
+  --norm2: #688E82;
+  --norm3: #457667;
+  --norm4: #2D5E4F;
+  --norm5: #154E3D;
+
+  --dark1: #909EA5;
+  --dark2: #657C88;
+  --dark3: #456371;
+  --dark4: #2D4B5A;
+  --dark5: #173B4A;
+}
+
 html {
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -17,7 +38,7 @@ body {
 }
 
 .side-menu {
-  background-color: azure;
+  background-color: var(--dark4);
   /*background-color: rgba(0, 0, 0, 0.5);*/
   padding: 0;
   margin: 0;
@@ -26,18 +47,28 @@ body {
   overflow-x: hidden;
 }
 
+.menu > li.active > a,
+.menu > li.active > a:focus,
+.menu > li.active > a:hover,
+.menu > li:focus > a,
+.menu > li:hover > a,
+.menu > li > a.active,
+.menu > li > a:focus,
+.menu > li > a:hover {
+  background-color: var(--dark3);
+}
+
 .menu > li + li {
   border-top-style: solid;
-  border-top-color: red;
+  border-top-color: var(-dark1);
   border-top-width: 1px;
-  margin-top: 5px;
-  padding-top: 5px;
 }
 
 .menu > li > a {
-  height: inherit;
+  /*height: inherit;*/
   text-align: center;
   margin: auto;
+  color: white;
 }
 
 .menu > li > a > i {
@@ -53,10 +84,17 @@ body {
   background-color: black;
 }
 
-.compact-nav {
+.top-nav {
   margin: 0;
   border-radius: 0 0 0 0;
-  border-bottom-color: red;
+}
+
+.style-nav {
+  background-color: var(--dark5);
+}
+
+.navbar-default .navbar-text {
+  color: white;
 }
 
 .navbar-brand {
@@ -92,6 +130,10 @@ body {
   height: auto;
 }
 
+.dashboard {
+  background-color: var(--light2);
+}
+
 .internal {
   padding-left: 0;
   height: inherit;
@@ -101,25 +143,19 @@ body {
   height: inherit;
 }
 
-/*#floor-plan {
-  background-color: grey;
-  background-color: rgba(50, 50, 50, 0.5);
-}*/
-
 .floors-pane {
-  background-color: grey;
-  background-color: rgba(50, 50, 50, 0.5);
+  background-color: var(--norm3);
   height: inherit;
 }
 
-#global {
-  background-color: red;
-  background-color: rgba(50, 50, 50, 0.5);
+.floor-pill > li > a {
+  color: white;
 }
 
-#account {
-    background-color: red;
-    background-color: rgba(50, 50, 50, 0.5);
+.floor-pill > li.active > a,
+.floor-pill > li.active > a:focus,
+.floor-pill > li > a:hover {
+  background-color: var(--norm2);
 }
 
 .navbar-fixed-bottom {
@@ -149,6 +185,10 @@ body {
 
 .quickbutton > i {
   font-size: 24px;
+}
+
+.quickbar {
+  background-color: #E9F5B5;
 }
 
 .floor-div {

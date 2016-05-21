@@ -21,9 +21,9 @@
 
 <body background="img/bg-arrow.png">
 
-  <nav class="navbar navbar-default navbar-fixed-top compact-nav">
+  <nav class="navbar navbar-default navbar-fixed-top top-nav">
     <!-- <nav class="navbar navbar-default navbar-fixed-top"> -->
-    <div class="container-fluid">
+    <div class="container-fluid style-nav">
 
       <!-- Nav bar -->
       <div class="navbar-header">
@@ -42,7 +42,7 @@
       </div>
 
       <div class="collapse navbar-collapse" id="navMenu">
-        <button type="button" class="navbar-btn navbar-right nav-logout-btn btn-default btn">Log Out</button>
+        <button type="button" class="navbar-btn navbar-right nav-logout-btn btn-default btn">Log Out <i class="fa fa-sign-out"></i></button>
         <p class="navbar-text navbar-right">Welcome Kathleen Hobbs</p>
 
         <!-- <form class="navbar-form navbar-right" role="search">
@@ -93,32 +93,32 @@
       </ul>
     </div>
 
-    <div class="tab-content col-md-11 col-xs-10 container-fluid internal">
-      <div id="dash" class="tab-pane fade in active col-xs-12">
+    <div class="tab-content col-md-11 col-xs-10 container-fluid internal max-size">
+      <div id="dash" class="tab-pane fade in active col-xs-12 dashboard">
         <div class="container-fluid">
-          <div class="col-md-3">
+          <div class="col-sm-3">
             ABC
           </div>
-          <div class="col-md-3">
+          <div class="col-sm-3">
             DEF
           </div>
-          <div class="col-md-3">
+          <div class="col-sm-3">
             GHI
           </div>
-          <div class="col-md-3">
+          <div class="col-sm-3">
             JKL
           </div>
         </div>
       </div>
 
       <div id="floor-plan" class="tab-pane fade col-xs-12 container-fluid max-size">
-        <div class="col-xs-2 floors-pane max-size">
-          <ul class="nav nav-pills nav-stacked">
+        <div class="col-sm-2 floors-pane max-size">
+          <ul class="nav nav-pills nav-stacked floor-pill">
             <li><a href="#floor-0" data-toggle="tab">Ground Floor</a></li>
             <li><a href="#floor-1" data-toggle="tab">Floor 1</a></li>
           </ul>
         </div>
-        <div class="col-xs-10 floors-pane">
+        <div class="col-sm-10">
           <div class="tab-content max-size">
             <div id="floor-0" class="tab-pane fade container-fluid max-size floor-div">
               <div class="container-fluid">
@@ -321,10 +321,10 @@
   <!--.container-fluid-->
 
   <!-- Footer -->
-  <nav class="navbar navbar-default navbar-fixed-bottom">
-    <div class="container-fluid ">
+  <nav class="navbar navbar-default navbar-fixed-bottom quickbar">
+    <div class="container-fluid style-nav">
       <div class="navbar-header">
-        <button id="quickbutton" type="button" class="navbar-toggle collapsed navbar-btn quickbutton" data-toggle="collapse" data-target="#quickbar" aria-expanded="false" onclick="switchArrow();">
+        <button id="quickbutton" type="button" class="navbar-toggle collapsed navbar-btn quickbutton" data-toggle="collapse" data-target="#quickbuttons" aria-expanded="false" onclick="switchArrow();">
           <span class="sr-only">Toggle navigation</span>
           <i id="quickicon" class="fa fa-arrow-up" aria-hidden="true"></i>
         </button>
@@ -334,7 +334,7 @@
         </div>
       </div>
 
-      <div class="collapse navbar-collapse" id="quickbar">
+      <div class="collapse navbar-collapse" id="quickbuttons">
         <ul class="nav navbar-nav">
           <li><a href="#"><i class="fa fa-sun-o"></i> Waking Up</a></li>
           <li><a href="#"><i class="fa fa-moon-o"></i> Bed Time</a></li>
