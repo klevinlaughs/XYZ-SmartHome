@@ -11,9 +11,17 @@ document.addEventListener("DOMContentLoaded", function(evt){
 
     // btn.attr("data-target", "#oven-" + btn.text().toLowerCase() + "-tab");
     btn.text(btn.text() === "OFF" ? "ON" : "OFF");
-    btn.toggleClass("btn-danger btn-success")
+    btn.toggleClass("btn-danger btn-success");
 
-    $("#oven-off-tab, #oven-on-tab").toggleClass("in active");
+    var isDisabled = $("#oven-fields").prop("disabled");
+
+    if (isDisabled) {
+      $("#oven-fields").prop("disabled", false);
+    } else {
+      $("#oven-fields").prop("disabled", true);
+    }
+
+    // $("#oven-off-tab, #oven-on-tab").toggleClass("in active");
 
     // if (btn.text() === "OFF"){
     //   btn.text("ON");
