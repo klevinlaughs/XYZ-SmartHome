@@ -49,15 +49,22 @@ body {
 
 .menu > li.active > a,
 .menu > li.active > a:focus,
+.menu > li.active > a:hover,
 .menu > li > a.active,
 .menu > li > a:hover {
-  background-color: var(--dark3);
+  background-color: var(--dark1);
+  border-radius: 0;
+  color: var(--dark5);
 }
 
 .menu > li + li {
   border-top-style: solid;
-  border-top-color: var(-dark1);
+  border-top-color: var(--dark1);
   border-top-width: 1px;
+}
+
+.menu > li {
+  margin-bottom: -2px;
 }
 
 .menu > li > a {
@@ -98,11 +105,6 @@ body {
   /*width: 200px;*/
 }
 
-.navbar-brand > img{
-  float: left;
-  /*width: 200px;*/
-}
-
 @media (min-width: 0px){
   .navbar-brand-text {
     float: left;
@@ -124,6 +126,7 @@ body {
 .nav-icon {
   width: 40px;
   height: auto;
+  float: left;
 }
 
 .dashboard {
