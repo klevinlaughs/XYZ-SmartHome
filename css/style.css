@@ -231,6 +231,6 @@ body {
   color: white;
 }
 
-.select-input {
-  height: 46px;
+.input-compact {
+  margin-bottom: 0;
 }
