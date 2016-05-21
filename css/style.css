@@ -177,14 +177,19 @@ body {
   background-color: var(--norm2);
 }
 
-.floor-title {
-  background-color: var(--light1);
-}
-
 .floor-div {
   text-align:center;
   height: inherit;
 }
+
+.floor-title {
+  background-color: var(--light1);
+}
+
+.svg-div {
+  padding-top: 20px;
+}
+
 .navbar-fixed-bottom {
   border-top-style: none;
 }
