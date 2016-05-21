@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function(evt){
 
     // btn.attr("data-target", "#oven-" + btn.text().toLowerCase() + "-tab");
     btn.text(btn.text() === "OFF" ? "ON" : "OFF");
+    btn.toggleClass("btn-danger btn-success")
 
     $("#oven-off-tab, #oven-on-tab").toggleClass("in active");
 

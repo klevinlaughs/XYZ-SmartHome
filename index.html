@@ -274,11 +274,11 @@
             </div>
 
             <div class="modal fade" id="ovenModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-              <div class="modal-dialog modal-sm" role="document">
+              <div class="modal-dialog " role="document">
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="glyphicon glyphicon-remove"></span></button>
-                    <button id="oven-toggle" type="button" class="btn btn-default">OFF</button>
+                    <button id="oven-toggle" type="button" class="btn btn-danger">OFF</button>
                     <h4 class="modal-title" id="myModalLabel">Oven Settings</h4>
                   </div>
                   <div id="oven-tabs" class="modal-body tab-content">
@@ -287,19 +287,37 @@
                     </div>
                     <div id="oven-on-tab" class="tab-pane fade">
                       <div class="row">
-                        <div class="input-group col-xs-10 col-xs-offset-1">
-                          <input type="number" class="form-control" placeholder="Temperature" aria-describedby="temp" min="60" max="300">
-                          <span class="input-group-addon">
-                            <input type="radio" name="unit">
-                            C
-                          </span>
-                          <span class="input-group-addon">
-                            <input type="radio" name="unit">
-                            F
-                          </span>
+                        <div class="col-xs-10 col-xs-offset-1 form-group">
+                          <div class="input-group input-group-lg">
+                            <input type="number" class="form-control" placeholder="Temperature" aria-describedby="temp" min="60" max="300">
+                            <span class="input-group-addon">
+                              <input type="radio" name="unit">
+                              C
+                            </span>
+                            <span class="input-group-addon">
+                              <input type="radio" name="unit">
+                              F
+                            </span>
+                          </div>
+                          <br>
+                          <div class="input-group input-group-lg">
+                            <input type="number" class="form-control" placeholder="Time" aria-describedby="temp" min="1" max="180">
+                            <span class="input-group-addon">
+                              Minutes
+                            </span>
+                          </div>
+                          <br>
+                          <div class="form-group">
+                            <label for="oven-mode">Select the oven mode:</label>
+                            <select id="oven-mode" class="form-control select-input">
+                              <option value="conventional">Conventional</option>
+                              <option value="fan-bake">Fan Bake</option>
+                              <option value="top-only">Top Only</option>
+                              <option value="fan-and-top">Fan Bake and Top Only</option>
+                              <option value="defrost">Defrost</option>
+                            </select>
+                          </div>
                         </div>
-                        time, mode, confirm, cancel
-                        conventional, fan-bake, top only, fan-bake and top-only, defrost
                       </div>
                     </div>
                   </div>

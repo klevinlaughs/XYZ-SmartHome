@@ -230,3 +230,7 @@ body {
 .quickicon {
   color: white;
 }
+
+.select-input {
+  height: 46px;
+}
