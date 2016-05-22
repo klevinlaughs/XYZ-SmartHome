@@ -104,7 +104,7 @@ function loadSnapshot(){
 
 function createOnAlert() {
   $("#content").append(
-    '<div id="oven-alert" class="alert alert-success alert-dismissible overlay" role="alert" >' +
+    '<div id="oven-alert" class="alert alert-success alert-dismissible overlay custom-alert" role="alert" >' +
       '<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true" class="glyphicon glyphicon-remove"></span></button>' +
       '<p>' +
         'The oven has been turned on at ' + $("#oven-temp").val() + ' &deg;' + $("input:radio[name=unit]:checked").val() + ' for ' + $("#oven-time").val() + ' minute(s) on ' + $("#oven-mode").val() + ' mode.' +
@@ -115,7 +115,7 @@ function createOnAlert() {
 
 function createNotice() {
   $("#column1").append(
-    '<div id="oven-alert" class="alert alert-success alert-dismissible" role="alert" >' +
+    '<div id="oven-alert" class="alert alert-success alert-dismissible custom-alert" role="alert" draggable="true" ondragstart="drag(event)">' +
       '<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true" class="glyphicon glyphicon-remove"></span></button>' +
       '<h4>Oven Notice</h4>' +
       '<p>' +
@@ -127,4 +127,19 @@ function createNotice() {
 
 function switchArrow() {
   $("#quickicon").toggleClass("fa-arrow-up fa-arrow-down");
+}
+
+// http://www.w3schools.com/html/html5_draganddrop.asp
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
 }

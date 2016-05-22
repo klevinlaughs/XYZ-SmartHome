@@ -37,6 +37,10 @@ body {
   height: inherit;
 }
 
+.dash-col {
+  height: inherit;
+}
+
 .side-menu {
   background-color: #2D4B5A;
   /*background-color: rgba(0, 0, 0, 0.5);*/
@@ -261,4 +265,8 @@ body {
   position: absolute;
   bottom: 40px;
   right: 0;
+}
+
+.custom-alert {
+  background-color: #AFCBB1;
 }
