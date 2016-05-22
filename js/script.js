@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function(evt){
 
     if ($("#oven-toggle").text() === "ON" ) {
       createOnAlert();
+      createNotice();
 
       $("#oven-block").css("fill", "var(--light3)");
       $("#oven-block").hover(function(){
@@ -102,10 +103,22 @@ function loadSnapshot(){
 }*/
 
 function createOnAlert() {
-  $("#internal-pane").after(
+  $("#content").append(
     '<div id="oven-alert" class="alert alert-success alert-dismissible overlay" role="alert" >' +
       '<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true" class="glyphicon glyphicon-remove"></span></button>' +
       'The oven has been turned on at ' + $("#oven-temp").val() + ' &deg;' + $("input:radio[name=unit]:checked").val() + ' for ' + $("#oven-time").val() + ' minute(s) on ' + $("#oven-mode").val() + ' mode.' +
+    '</div>'
+  );
+}
+
+function createNotice() {
+  $("#column1").append(
+    '<div id="oven-alert" class="alert alert-success alert-dismissible" role="alert" >' +
+      '<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true" class="glyphicon glyphicon-remove"></span></button>' +
+      '<h4>Oven Notice</h4>' +
+      '<p>' +
+        'The oven has been turned on at ' + $("#oven-temp").val() + ' &deg;' + $("input:radio[name=unit]:checked").val() + ' for ' + $("#oven-time").val() + ' minute(s) on ' + $("#oven-mode").val() + ' mode.' +
+      '</p>' +
     '</div>'
   );
 }

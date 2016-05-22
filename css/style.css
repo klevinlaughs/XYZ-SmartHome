@@ -143,9 +143,9 @@ body {
   float: left;
 }
 
-/*.dashboard {
-  background-color: var(--light1);
-}*/
+.dashboard {
+  padding-top: 15px;
+}
 
 .internal {
   padding-left: 0;
