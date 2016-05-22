@@ -26,7 +26,6 @@ html {
 body {
   /*background: #F5FBF1;*/
   background-repeat: repeat;
-  padding-top: 50px;
   padding-bottom: 50px;
   height: inherit;
 }
@@ -239,6 +238,10 @@ body {
 
 .quickicon {
   color: white;
+}
+
+.author-text {
+  padding-right: 15px;
 }
 
 .appliance-header {
