@@ -273,3 +273,10 @@ body {
 .custom-alert {
   background-color: #AFCBB1;
 }
+
+.alert-move {
+  position:relative;
+  float:right;
+  bottom:5px;
+  right:-30px;
+}

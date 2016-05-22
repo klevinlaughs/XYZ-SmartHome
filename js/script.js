@@ -120,7 +120,8 @@ function createNotice() {
       '<h4>Oven Notice</h4>' +
       '<p>' +
         'The oven has been turned on at ' + $("#oven-temp").val() + ' &deg;' + $("input:radio[name=unit]:checked").val() + ' for ' + $("#oven-time").val() + ' minute(s) on ' + $("#oven-mode").val() + ' mode.' +
-
+      '</p>' +
+      '<i class="fa fa-arrows alert-move"></i>' +
     '</div>'
   );
 }
