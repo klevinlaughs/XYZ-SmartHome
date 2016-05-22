@@ -250,3 +250,11 @@ body {
 .jumbotron.off-message {
   border-radius: 0;
 }
+
+.overlay {
+  width: 40%;
+  height: 50px;
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+}

@@ -93,7 +93,7 @@
       </ul>
     </div>
 
-    <div class="tab-content col-md-11 col-sm-11 container-fluid internal max-size">
+    <div id="internal-pane" class="tab-content col-md-11 col-sm-11 container-fluid internal max-size">
       <div id="dash" class="tab-pane fade in active col-xs-12 dashboard">
         <div class="container-fluid">
           <div class="col-sm-3">
@@ -235,7 +235,7 @@
                   <rect class="interactive-block" x="195.44" y="41.5" width="38" height="31" />
                   <rect class="interactive-block" x="62.36" y="181.5" width="34.02" height="38" />
                   <a href="#" data-toggle="modal" data-target="#ovenModal" class="interactive-link">
-                    <rect class="interactive-block" x="195.44" y="72.5" width="38" height="30" />
+                    <rect id="oven-block" class="interactive-block" x="195.44" y="72.5" width="38" height="30" />
                     <text class="text-small" transform="translate(204.9 89.69)">Oven</text>
                   </a>
                   <path class="outline" d="M175.64,316" transform="translate(-113.29 -96.5)" />
@@ -273,62 +273,65 @@
               </div>
             </div>
 
-            <div class="modal fade" id="ovenModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal fade" id="ovenModal" tabindex="-1" role="dialog">
               <div class="modal-dialog " role="document">
                 <div class="modal-content">
-                  <div class="modal-header container-fluid appliance-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="glyphicon glyphicon-remove"></span></button>
-                    <button id="oven-toggle" type="button" class="btn btn-danger modal-btn" data-toggle="collapse" data-target="#off-message">OFF</button>
-                    <h3 class="modal-title" id="myModalLabel">Oven Settings</h3>
-                  </div>
-                  <div class="modal-body">
-                    <div class="row">
-                      <div id="off-message" class="collapse in">
-                        <div class="jumbotron off-message">
-                          <div class="container">
-                            <h3>Please turn on the oven to change settings</h3>
+                  <form id="oven-form">
+                    <div class="modal-header container-fluid appliance-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="glyphicon glyphicon-remove"></span></button>
+                      <button id="oven-toggle" type="button" class="btn btn-danger modal-btn" data-toggle="collapse" data-target="#off-message">OFF</button>
+                      <h3 class="modal-title" id="myModalLabel">Oven Settings</h3>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div id="off-message" class="collapse in">
+                          <div class="jumbotron off-message">
+                            <div class="container">
+                              <h3>Please turn on the oven to change settings</h3>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="col-xs-10 col-xs-offset-1 form-group input-compact">
-                        <fieldset id="oven-fields" disabled>
-                          <div class="input-group input-cozy">
-                            <input type="number" class="form-control" placeholder="Temperature" aria-describedby="temp" min="60" max="300">
-                            <span class="input-group-addon">
-                              <input type="radio" name="unit" checked>
-                              &deg;C
-                            </span>
-                            <span class="input-group-addon">
-                              <input type="radio" name="unit">
-                              &deg;F
-                            </span>
-                          </div>
+                        <div class="col-xs-10 col-xs-offset-1 form-group input-compact">
+                          <fieldset id="oven-fields" disabled>
+                            <div class="input-group input-cozy">
+                              <input id="oven-temp" type="number" class="form-control" placeholder="Temperature" aria-describedby="temp" min="60" max="300" required>
+                              <span class="input-group-addon">
+                                <input type="radio" name="unit" value="C" checked>
+                                &deg;C
+                              </span>
+                              <span class="input-group-addon">
+                                <input type="radio" name="unit" value="F">
+                                &deg;F
+                              </span>
+                            </div>
 
-                          <div class="input-group input-cozy">
-                            <input type="number" class="form-control" placeholder="Time" aria-describedby="temp" min="1" max="180">
-                            <span class="input-group-addon">
-                              Minutes
-                            </span>
-                          </div>
+                            <div class="input-group input-cozy">
+                              <input id="oven-time" type="number" class="form-control" placeholder="Time" aria-describedby="temp" min="1" max="180" required>
+                              <span class="input-group-addon">
+                                Minutes
+                              </span>
+                            </div>
 
-                          <div class="form-group input-compact">
-                            <label for="oven-mode">Select the oven mode:</label>
-                            <select id="oven-mode" class="form-control">
-                              <option value="conventional">Conventional</option>
-                              <option value="fan-bake">Fan Bake</option>
-                              <option value="top-only">Top Only</option>
-                              <option value="fan-and-top">Fan Bake and Top Only</option>
-                              <option value="defrost">Defrost</option>
-                            </select>
-                          </div>
-                        </fieldset>
+                            <div class="form-group input-compact">
+                              <label for="oven-mode">Select the oven mode:</label>
+                              <select id="oven-mode" class="form-control">
+                                <option value="conventional" selected>Conventional</option>
+                                <option value="fan-bake">Fan Bake</option>
+                                <option value="top-only">Top Only</option>
+                                <option value="fan-and-top">Fan Bake and Top Only</option>
+                                <option value="defrost">Defrost</option>
+                              </select>
+                            </div>
+
+                          </fieldset>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -354,6 +357,11 @@
         account
       </div>
     </div>
+
+    <!-- <div id="oven-alert" class="alert alert-success alert-dismissible overlay" role="alert" >
+      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true" class="glyphicon glyphicon-remove"></span></button>
+      The oven has been turned on at '+ $("#oven-temp").val() + ' &deg;' + $("input:radio[name=unit]:checked").val() + ' for ' + $("#oven-time").val() + ' minutes on ' + $("#oven-mode").val() + ' mode.
+    </div> -->
   </div>
   <!--.container-fluid-->
 
