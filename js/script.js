@@ -106,7 +106,9 @@ function createOnAlert() {
   $("#content").append(
     '<div id="oven-alert" class="alert alert-success alert-dismissible overlay" role="alert" >' +
       '<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true" class="glyphicon glyphicon-remove"></span></button>' +
-      'The oven has been turned on at ' + $("#oven-temp").val() + ' &deg;' + $("input:radio[name=unit]:checked").val() + ' for ' + $("#oven-time").val() + ' minute(s) on ' + $("#oven-mode").val() + ' mode.' +
+      '<p>' +
+        'The oven has been turned on at ' + $("#oven-temp").val() + ' &deg;' + $("input:radio[name=unit]:checked").val() + ' for ' + $("#oven-time").val() + ' minute(s) on ' + $("#oven-mode").val() + ' mode.' +
+      '</p>' +
     '</div>'
   );
 }
@@ -118,7 +120,7 @@ function createNotice() {
       '<h4>Oven Notice</h4>' +
       '<p>' +
         'The oven has been turned on at ' + $("#oven-temp").val() + ' &deg;' + $("input:radio[name=unit]:checked").val() + ' for ' + $("#oven-time").val() + ' minute(s) on ' + $("#oven-mode").val() + ' mode.' +
-      '</p>' +
+
     '</div>'
   );
 }
