@@ -34,18 +34,18 @@ document.addEventListener("DOMContentLoaded", function(evt){
       createOnAlert();
       createNotice();
 
-      $("#oven-block").css("fill", "var(--light3)");
+      $("#oven-block").css("fill", "#538D57");
       $("#oven-block").hover(function(){
-        $(this).css("fill", "var(--norm1)");
+        $(this).css("fill", "#95ACA5");
       },function(){
-        $(this).css("fill", "var(--light3)");
+        $(this).css("fill", "#538D57");
       });
 
     } else {
 
       $("#oven-block").css("fill", "white");
       $("#oven-block").hover(function(){
-        $(this).css("fill", "var(--norm1)");
+        $(this).css("fill", "#95ACA5");
       },function(){
         $(this).css("fill", "white");
       });
