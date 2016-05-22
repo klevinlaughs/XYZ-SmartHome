@@ -186,6 +186,12 @@ body {
   background-color: var(--light1);
 }
 
+.back-floor-btn {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
 .svg-div {
   padding-top: 20px;
 }
