@@ -55,6 +55,9 @@ document.addEventListener("DOMContentLoaded", function(evt){
     e.preventDefault();
   });
 
+  $("#instructions").modal("show");
+  $("#landing").focus();
+
 });
 var savedOven;
 var ovenStatus;

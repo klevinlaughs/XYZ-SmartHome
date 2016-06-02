@@ -244,6 +244,20 @@ body {
   padding-right: 15px;
 }
 
+.help {
+  color: white;
+  padding: 5px;
+}
+
+.help:hover,
+.help:focus {
+  text-decoration: none;
+  background-color: #909EA5;
+  color: #173B4A;
+  border-radius: 2px;
+
+}
+
 .appliance-header {
   text-align: center;
 }
